@@ -1,5 +1,6 @@
 {
   "name": "linbotwebsite",
+  "homepage": "http://bravenetwork.org/commands/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

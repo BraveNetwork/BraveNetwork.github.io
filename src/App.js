@@ -8,7 +8,7 @@ const App = () => (
 	<div>
 	<NavMenu />
 	<Switch>
-		<Route path="/commands" component={CommandList} />
+		<Route path="/" component={CommandList} />
 	</Switch>
 	<footer>
 		<div className="container">

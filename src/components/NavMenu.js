@@ -2,11 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavMenu.css';
 
-const ghImg = '../images/github.png';
-const twImg = '../images/twitter.png';
-const diImg = '../images/discord.png';
-const whiteLogo = '../images/logo_white.png';
-const menuImg = '../images/icon-menu.svg';
+const ghImg = require('../images/github.png');
+const diImg = require('../images/discord.png');
+const whiteLogo = require('../images/avatar-linbot.png');
+const menuImg = require('../images/icon-menu.svg');
 
 const github = 'https://github.com/NetworkFrontier/LinBot';
 const discord = 'https://discord.gg/bravenetwork';

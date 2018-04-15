@@ -5,9 +5,9 @@ import Marked from 'marked';
 const cmd_src = 'https://raw.githubusercontent.com/NetworkFrontier/LinBot/temp-master-gwl/docs/cmds_new.json';
 const request_url = 'https://github.com/NetworkFrontier/LinBot/labels/request';
 
-const commandsListImg = '../images/icon-command_list-white.svg';
-const featureImg = '../images/icon-feature.svg';
-const arrowDown = '../images/icon-arrow-down-white.svg';
+const commandsListImg = require('../images/icon-command_list-white.svg');
+const featureImg = require('../images/icon-feature.svg');
+const arrowDown = require('../images/icon-arrow-down-white.svg');
 
 Marked.Renderer.prototype.paragraph = (x) => x;
 
@@ -74,7 +74,8 @@ export default class CommandList extends Component {
                 <span>Requires</span>
                 <section className="required-permissions">
                 {
-                    c.Requirements.map(r => (<span
+                    c.Requirements.map((r,key) => (<span
+						key={`req-${key}`}
                         className="permission"
                     >
                         {r}
@@ -87,8 +88,8 @@ export default class CommandList extends Component {
 
     renderOptions(c) {
         return [
-            (<span> Options </span>),
-            (<span dangerouslySetInnerHTML={{ __html: Marked.parse(c.Options) }} />)
+            (<span key='Options-0'> Options </span>),
+            (<span key='Options-1'dangerouslySetInnerHTML={{ __html: Marked.parse(c.Options) }} />)
         ];
     }
     render() {
