@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './CommandList.css';
-import * as Marked from 'marked';
+import Marked from 'marked';
 
 const cmd_src = 'https://raw.githubusercontent.com/NetworkFrontier/LinBot/temp-master-gwl/docs/cmds_new.json';
 const request_url = 'https://github.com/NetworkFrontier/LinBot/labels/request';
@@ -123,18 +123,18 @@ export default class CommandList extends Component {
                 <div className="cl-headers-wrap">
                     <div className="cl-header">
                         <h2>
-                            <img src={commandsListImg} />
+                            <img src={commandsListImg} alt=""/>
                             <span>Command List</span>
                         </h2>
                         <a className="suggest-feature" href={request_url} target="_blank">
-                            <button>Suggest a feature/command <img src={featureImg} /></button>
+                            <button>Suggest a feature/command <img src={featureImg} alt=""/></button>
                         </a>
                     </div>
                     <div className="cl-sub-header">
                         <div>
                             <div className="modules-header">
                                 Modules
-                                <img src={arrowDown} />
+                                <img src={arrowDown} alt=""/>
                             </div>
                             <div className="modules-all">
                                 <button
