@@ -3,12 +3,12 @@
     font-weight: 400;
     src: url("../fonts/NotoSans-Regular.ttf");
 }
-@font-face {
+/* @font-face {
     font-family: Panton;
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/Panton-BlackCaps.otf");
-}
+} */
 
 body {
     background: #303030;

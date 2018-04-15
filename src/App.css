@@ -24,7 +24,7 @@ text-decoration: none !important;
 }
 p { margin: 0; }
 
-@font-face {
+/* @font-face {
   font-family: Patua;
   src: url("fonts/Patua-One.woff2") format('woff');
 }
@@ -47,9 +47,9 @@ p { margin: 0; }
 @font-face {
   font-family: Uni Sans HI;
   src: url("fonts/Uni Sans Heavy Italic.otf");
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: WhitneyHTF-M;
   src: url("fonts/WhitneyHTF-Medium.ttf");
 }
@@ -72,7 +72,7 @@ p { margin: 0; }
 @font-face {
   font-family: Fira Sans;
   src: url("fonts/FiraSans-Regular.otf");
-}
+} */
 
 @font-face {
   font-family: NotoSans;
