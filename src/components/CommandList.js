@@ -94,7 +94,7 @@ export default class CommandList extends Component {
     }
     render() {
         if (Object.keys(this.state.data).length === 0) {
-            return (<div className="command-list-container">Loading...</div>);
+            return (<div className="command-list-container loading">Loading...</div>);
         }
 
         const modules = [];
