@@ -1,42 +1,34 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import SocialLinkSet from './SocialLinkSet';
 import './NavMenu.css';
 
-const ghImg = require('../images/github.png');
-const diImg = require('../images/discord.png');
-const whiteLogo = require('../images/avatar-linbot.png');
+const logo = require('../images/avatar-linbot.png');
 const menuImg = require('../images/icon-menu.svg');
-
-const github = 'https://github.com/NetworkFrontier/LinBot';
-const discord = 'https://discord.gg/bravenetwork';
 
 const NavMenu = () => (
 	<nav>
-		<section className="nav-left-wrap">
-			<div className="sidebar">
-				<div className="menu-icon-wrap">
-					<div className="menu-icon">
-						<img src={menuImg} alt="NadekoBot_Icon_Menu" />
+		<section className='nav-left-wrap'>
+			<div className='sidebar'>
+				<div className='menu-icon-wrap'>
+					<div className='menu-icon'>
+						<img src={menuImg} alt='NadekoBot_Icon_Menu' />
 					</div>
 				</div>
 			</div>
 
-			<div className="nav-left">
-				<div className="logo">
-					<NavLink to={'/'}><img src={whiteLogo} alt="NadekoBot_Logo" /></NavLink>
+			<div className='nav-left'>
+				<div className='logo'>
+					<NavLink to={'/'}><img src={logo} alt='LinBot_Logo' /></NavLink>
 				</div>
-				<a className="social github" target="_blank" href={github}>
-					<div>
-						<img src={ghImg} alt="NadekoBot_Github_Logo" />
-					</div>
-				</a>
-				<a className="social discord" target="_blank" href={discord}>
-					<div>
-						<img src={diImg} alt="NadekoBot_Discord_Logo" />
-					</div>
-				</a>
+				<SocialLinkSet />
 			</div>
 		</section>
+		<div className='nav-right-wrap'>
+			<div className='nav-right'>
+				<p>Modified from <span class='smaller'><NavLink to={'https://www.patreon.com/nadekobot'}>Kwoth's NadekoBot</NavLink></span></p>
+			</div>
+		</div>
 	</nav>
 );
 

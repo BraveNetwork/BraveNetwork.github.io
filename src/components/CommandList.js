@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './CommandList.css';
 import Marked from 'marked';
 
-const cmd_src = 'https://raw.githubusercontent.com/NetworkFrontier/LinBot/temp-master-gwl/docs/cmds_new.json';
-const request_url = 'https://github.com/NetworkFrontier/LinBot/labels/request';
+const cmd_src = 'https://raw.githubusercontent.com/BraveNetwork/LinBot/temp-master-gwl/docs/cmds_new.json';
+const request_url = 'https://github.com/BraveNetwork/LinBot/labels/request';
 
 const commandsListImg = require('../images/icon-command_list-white.svg');
 const featureImg = require('../images/icon-feature.svg');

@@ -57,7 +57,8 @@ nav {
 }
 
     nav a {
-        text-decoration: none;
+		text-decoration: none;
+		color: #aaa;
     }
 
 .sidebar {
@@ -103,47 +104,11 @@ nav {
     display: -ms-flexbox;
     display: flex;
     float: right;
-    width: calc(500px - 15px);
+	width: 350px;
+	color: #00aa55;
 }
 .nav-right a {
-    color: #fff;
-}
-
-.miner-wrap {
-    width: calc(50% + 7.5px);
-}
-
-.miner-menu {
-    background: #1A1A1A;
-    cursor: pointer;
-    color: #fff;
-    height: 44px;
-    line-height: 44px;
-    padding: 0 50px 0 25px;
-    position: relative;
-    text-align: center;
-}
-.miner-menu:before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-color: transparent transparent #1A1A1A transparent;
-    border-style: solid;
-    border-width: 0 0 44px 15px;
-    padding-left: 1px;
-    position: absolute;
-    left: -15px;
-}
-.miner-menu:hover {
-    background: #2b2b2b;
-}
-.miner-menu:hover:before {
-    border-color: transparent transparent #2b2b2b transparent;
-}
-
-.miner-menu img {
-    margin-left: 10px;
-    width: 15px;
+    color: #aaa;
 }
 
 nav a.active {
@@ -161,7 +126,8 @@ nav a.active {
 }
 
 a, a:hover, a:active, a:focus {
-    outline: 0;
+	outline: 0;
+	color: #fff;
 }
 
 .clear {

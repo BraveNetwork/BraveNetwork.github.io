@@ -1,0 +1,25 @@
+main {
+	text-align: center;
+	padding: 128px;
+	margin: 32px 0;
+	background-color: #000;
+	color: #fff;
+	font-size: 2em;
+}
+
+h1 {
+	margin: 16px 0 64px 0;
+}
+
+p {
+	margin: 16px 0;
+}
+
+a {
+	text-decoration: none;
+	color: #00aa55;
+}
+
+a:hover {
+	color: #7bda9a;
+}
