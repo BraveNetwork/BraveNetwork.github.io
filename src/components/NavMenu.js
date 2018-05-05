@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import config from './../config';
 import SocialLinkSet from './SocialLinkSet';
 import './NavMenu.css';
 
@@ -19,14 +20,14 @@ const NavMenu = () => (
 
 			<div className='nav-left'>
 				<div className='logo'>
-					<Link to='/'><img src={logo} alt='LinBot_Logo' /></Link>
+					<a href={config.homeURL}><img src={logo} alt='LinBot_Logo' /></a>
 				</div>
 				<SocialLinkSet />
 			</div>
 		</section>
 		<div className='nav-right-wrap'>
 			<div className='nav-right'>
-				<p>Modified from <span class='smaller'><a href={'https://www.patreon.com/nadekobot'} target='_blank'>Kwoth's NadekoBot</a></span></p>
+				<p>Modified from <span class='smaller'><a href={'https://www.patreon.com/nadekobot'} target='_blank'>{'Kwoth\'s NadekoBot'}</a></span></p>
 			</div>
 		</div>
 	</nav>
